@@ -46,7 +46,9 @@ export default function Services() {
         <div className="callout" style={{ marginTop: 34 }}>
           <strong>What we don&rsquo;t do.</strong> We aren&rsquo;t architects or
           engineers, so we don&rsquo;t stamp drawings. When a job needs plans we
-          bring in our engineering partner and manage them alongside the permit.
+          bring in our engineering partner and manage them alongside the
+          permit. Right now we handle building permits only — we don&rsquo;t
+          pull electrical, plumbing or mechanical permits separately.
         </div>
 
         <div className="btn-row">

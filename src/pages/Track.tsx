@@ -45,9 +45,12 @@ export default function Track() {
             </button>
           </div>
           <div className="callout">
-            <strong>Something look wrong?</strong> Call (951) 555‑0140 or reply
-            to any email from us. We&rsquo;d rather hear about it than have you
-            guess.
+            <strong>Something look wrong?</strong> Email us at{" "}
+            <a href="mailto:socalpermitrunner@gmail.com">
+              socalpermitrunner@gmail.com
+            </a>{" "}
+            or reply to any email from us. We&rsquo;d rather hear about it
+            than have you guess.
           </div>
         </div>
       </section>
@@ -101,7 +104,7 @@ export default function Track() {
           {failed && (
             <div className="error">
               That combination doesn&rsquo;t match a job. Check the number and
-              try again, or call us at (951) 555‑0140.
+              try again, or email us at socalpermitrunner@gmail.com.
             </div>
           )}
 

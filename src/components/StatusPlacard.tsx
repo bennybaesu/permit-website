@@ -89,7 +89,8 @@ export default function StatusPlacard({ job }: { job: Job }) {
       </div>
 
       <div className="placard__foot">
-        Last updated {job.lastUpdated} · Questions? Call (951) 555‑0140
+        Last updated {job.lastUpdated} · Questions? Email
+        socalpermitrunner@gmail.com
       </div>
     </div>
   );

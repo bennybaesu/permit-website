@@ -1,4 +1,4 @@
-# Permit Track — Phase 1 shell
+# SoCal Permit Service — Phase 1 shell
 
 React 18 + TypeScript + Vite. No backend, no database, no paid services.
 
@@ -112,7 +112,7 @@ Before real client data goes in:
 cd permit-site
 git init
 git add .
-git commit -m "Permit Track: phase 1 shell"
+git commit -m "SoCal Permit Service: phase 1 shell"
 git branch -M main
 ```
 
@@ -142,7 +142,7 @@ First build takes about a minute. You'll get a URL like
 ### 3. Rename it
 
 Site configuration → Site details → **Change site name** → e.g.
-`permit-track-demo` → your URL becomes `https://permit-track-demo.netlify.app`.
+`socal-permit-service` → your URL becomes `https://socal-permit-service.netlify.app`.
 
 ### 4. Every push redeploys
 
@@ -171,10 +171,9 @@ a fake phone number.
 
 ## What to replace before this is real
 
-- [ ] Phone number, email, hours, service area (`Contact.tsx`, `Layout.tsx`, `StatusPlacard.tsx`)
-- [ ] Business name and the `PERMIT·TRACK` wordmark
+- [ ] Hours, and confirm the service area copy against where jobs actually come from (`Contact.tsx`, `Layout.tsx`, `StatusPlacard.tsx`)
 - [ ] `About.tsx` — your real names and a photo. In a two-person business the people are the pitch
-- [ ] Real jurisdiction data in `src/data/seed.ts` (this is the routing table from the plan — it feeds both the site and your operations)
+- [ ] Real jurisdiction data in `src/data/seed.ts` — currently only Riverside and Orange County cities, but the copy now claims all of Southern California; add San Diego, LA and San Bernardino jurisdictions or narrow the copy back down
 - [ ] Wire `/start` to somewhere. Easiest: add `data-netlify="true"` and a `name` to the `<form>` in `Start.tsx` and Netlify Forms captures submissions for free
 - [ ] Privacy policy and terms — required if you're collecting SMS consent
 - [ ] Real pricing decision: publish it or don't, but pick
