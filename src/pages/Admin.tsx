@@ -187,7 +187,7 @@ export default function Admin() {
   return (
     <>
       <div className="admin-bar">
-        <span>Permit Track — staff console</span>
+        <span>SoCal Permit Service — staff console</span>
         <span className="spacer" />
         <button
           className="btn--link"

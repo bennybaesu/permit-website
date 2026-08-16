@@ -7,14 +7,14 @@ export default function Home() {
       <section className="hero">
         <div className="container hero__grid">
           <div>
-            <p className="eyebrow">Riverside &amp; Orange County</p>
+            <p className="eyebrow">Southern California</p>
             <h1>
               We pull the permits so your crews aren&rsquo;t sitting idle.
             </h1>
             <p className="lead">
-              Permit filing, plan check corrections and agency follow-up for
-              contractors, plans firms and homeowners. You always know where
-              your job stands and who&rsquo;s holding it up.
+              Building permit filing, plan check corrections and agency
+              follow-up for contractors, plans firms and homeowners. You
+              always know where your job stands and who&rsquo;s holding it up.
             </p>
             <div className="btn-row">
               <Link to="/start" className="btn btn--primary">
@@ -25,7 +25,11 @@ export default function Home() {
               </Link>
             </div>
             <p className="hint" style={{ marginTop: 18 }}>
-              Or call <strong>(951) 555‑0140</strong> — we answer.
+              Or email{" "}
+              <a href="mailto:socalpermitrunner@gmail.com">
+                <strong>socalpermitrunner@gmail.com</strong>
+              </a>{" "}
+              — we answer.
             </p>
           </div>
 

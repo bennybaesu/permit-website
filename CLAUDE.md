@@ -2,13 +2,17 @@
 
 ## What this is
 
-A marketing site and permit status tracker for a two-person permit expediting
-business serving Riverside and Orange County, California. The owners are a
+A marketing site and permit status tracker for SoCal Permit Service, a
+two-person permit expediting business serving Southern California (Riverside,
+Orange, San Diego, Los Angeles and San Bernardino counties). The owners are a
 husband (software engineer, writes the code) and wife (does the permitting
 work, has the domain knowledge and edits job statuses).
 
 Clients are contractors, plans/engineering firms, insurance restoration
 companies, and homeowners rebuilding after fire damage.
+
+Scope, as of now: building permits only. No electrical, plumbing or mechanical
+permits pulled separately. Flag it if a task's copy implies otherwise.
 
 **The product thesis in one line:** clients should always know whose court the
 ball is in. Every design decision serves that.
@@ -145,11 +149,10 @@ as secure, and do not build features that assume it is.
 
 Flag these if a task touches them — they are not real yet:
 
-- Phone `(951) 555-0140`, email `jobs@example.com` — appear in `Contact.tsx`,
-  `Layout.tsx`, `StatusPlacard.tsx`, `Track.tsx`, `Start.tsx`
-- Business name and the `PERMIT·TRACK` wordmark
 - `About.tsx` — entirely placeholder copy
-- Jurisdiction records in `seed.ts` — plausible but not verified
+- Jurisdiction records in `seed.ts` — only cover Riverside and Orange County
+  cities. Copy now claims all of Southern California; no San Diego, LA or San
+  Bernardino jurisdictions exist in `seed.ts` yet
 - `/start` doesn't submit anywhere
 - No privacy policy or terms (required before collecting SMS consent)
 

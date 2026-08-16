@@ -20,7 +20,7 @@ function Nav() {
     <header className={open ? "nav open" : "nav"}>
       <div className="nav__inner">
         <Link to="/" className="brand" onClick={close}>
-          PERMIT<span>·</span>TRACK
+          SOCAL<span>·</span>PERMIT
         </Link>
 
         <button
@@ -72,10 +72,10 @@ function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <h4>Permit Track</h4>
+            <h4>SoCal Permit Service</h4>
             <p style={{ margin: 0 }}>
-              Permit expediting for contractors, plans firms and homeowners
-              across Riverside and Orange County.
+              Building permit expediting for contractors, plans firms and
+              homeowners across Southern California.
             </p>
           </div>
           <div>
@@ -124,8 +124,8 @@ function Footer() {
           </div>
         </div>
         <div className="footer__base">
-          © {new Date().getFullYear()} Permit Track. Demo site — replace
-          contact details, entity name and legal pages before going live.
+          © {new Date().getFullYear()} SoCal Permit Service. Demo site —
+          legal pages still needed before going live.
         </div>
       </div>
     </footer>
