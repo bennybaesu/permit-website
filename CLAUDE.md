@@ -112,6 +112,11 @@ Plain and direct. Write from the reader's side of the screen.
 
 ## Domain vocabulary
 
+- **Project number** — `Job.locator`. Format is two letters, a dash, four
+  digits (e.g. `RC-4471`). The `/track` project-number input auto-formats
+  keystrokes to this pattern (`src/pages/Track.tsx`, `formatLocator`).
+  `nextLocator()` in `src/lib/store.ts` currently only generates the `RC-`
+  prefix — extend it if a job series needs a different prefix.
 - **Jurisdiction** — the city or county whose rules apply
 - **Issuing agency** — who actually takes the submittal. NOT always the same as
   the jurisdiction: some cities contract building & safety out to the county or
