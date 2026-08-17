@@ -9,12 +9,12 @@ export default function Home() {
           <div>
             <p className="eyebrow">Southern California</p>
             <h1>
-              We pull the permits so your crews aren&rsquo;t sitting idle.
+              From submittal to approval, we keep things moving.
             </h1>
             <p className="lead">
-              Building permit filing, plan check corrections and agency
-              follow-up for contractors, plans firms and homeowners. You
-              always know where your job stands and who&rsquo;s holding it up.
+              Permitting takes time. Chasing it down doesn&rsquo;t have to
+              take yours. We handle submittals, corrections, and agency
+              follow-ups while keeping you updated from start to finish.
             </p>
             <div className="btn-row">
               <Link to="/start" className="btn btn--primary">
@@ -50,33 +50,36 @@ export default function Home() {
       <section className="section section--dark">
         <div className="container">
           <p className="eyebrow">Why clients stay</p>
-          <h2>You&rsquo;ll never wonder whose fault the delay is.</h2>
+          <h2>You&rsquo;ll always know where your permit stands.</h2>
           <p className="lead">
-            Most permitting goes quiet for weeks and everyone assumes the worst.
-            Every job we run shows one of three things at any moment: waiting on
-            you, waiting on the agency, or we&rsquo;re on it — with dates
-            attached.
+            Permitting can take time. That doesn&rsquo;t mean you should be
+            left wondering what&rsquo;s happening. Every job we manage has a
+            clear status, a clear next step, and dates attached—so you
+            always know where things stand.
           </p>
           <div className="grid grid--3" style={{ marginTop: 30 }}>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#d96f4c" }}>Waiting on you</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                The exact document we need and the date we need it by. No vague
-                &ldquo;pending client.&rdquo;
+                If we need something from you, you&rsquo;ll know exactly what
+                it is and when we need it. No vague requests or digging
+                through old emails.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#7fb2d1" }}>Waiting on the agency</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                Which department, how many days elapsed, and what that
-                jurisdiction typically takes.
+                Know where your permit is, which department is reviewing it,
+                how long it&rsquo;s been there, and when it&rsquo;s time for
+                us to follow up.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#789783" }}>We&rsquo;re on it</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                What we&rsquo;re actively doing, timestamped. Silence is what
-                makes people assume you&rsquo;ve dropped the ball.
+                When the next step is ours, you&rsquo;ll know what
+                we&rsquo;re working on and what comes next. We stay on top of
+                the process so you don&rsquo;t have to.
               </p>
             </div>
           </div>
