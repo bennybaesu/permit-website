@@ -1,8 +1,23 @@
-import { useState, type FormEvent } from "react";
+import { useState, type ChangeEvent, type FormEvent } from "react";
 import { useSearchParams } from "react-router-dom";
 import StatusPlacard from "../components/StatusPlacard";
 import { findJob } from "../lib/store";
 import type { Job } from "../types";
+
+/** Formats input into the LL-#### project number pattern (e.g. RC-4471). */
+function formatLocator(raw: string): string {
+  const alnum = raw.toUpperCase().replace(/[^A-Z0-9]/g, "");
+  let letters = "";
+  let digits = "";
+  for (const ch of alnum) {
+    if (letters.length < 2 && digits.length === 0 && /[A-Z]/.test(ch)) {
+      letters += ch;
+    } else if (digits.length < 4 && /[0-9]/.test(ch)) {
+      digits += ch;
+    }
+  }
+  return letters.length === 2 ? `${letters}-${digits}` : letters;
+}
 
 export default function Track() {
   const [params, setParams] = useSearchParams();
@@ -23,6 +38,17 @@ export default function Track() {
       setJob(null);
       setFailed(true);
     }
+  }
+
+  function editLocator(e: ChangeEvent<HTMLInputElement>) {
+    const raw = e.target.value;
+    // Backspacing right after the auto-inserted dash (e.g. "RC-" -> "RC")
+    // should remove the second letter too, not leave the dash to reappear.
+    const deletedAutoDash =
+      raw.length < locator.length &&
+      locator.endsWith("-") &&
+      raw === locator.slice(0, -1);
+    setLocator(formatLocator(deletedAutoDash ? raw.slice(0, -1) : raw));
   }
 
   function reset() {
@@ -74,11 +100,11 @@ export default function Track() {
               id="locator"
               className="locator-input"
               value={locator}
-              onChange={(e) => setLocator(e.target.value)}
+              onChange={editLocator}
               placeholder="RC-0000"
               autoComplete="off"
               spellCheck={false}
-              maxLength={10}
+              maxLength={7}
             />
             <p className="hint">
               Two letters, four digits. It&rsquo;s on every email we send.
