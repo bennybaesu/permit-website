@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import logoMark from "../assets/logo-mark.svg";
 
 const LINKS = [
   { to: "/services", label: "Services" },
@@ -20,6 +21,7 @@ function Nav() {
     <header className={open ? "nav open" : "nav"}>
       <div className="nav__inner">
         <Link to="/" className="brand" onClick={close}>
+          <img src={logoMark} alt="" className="brand__mark" width="28" height="28" />
           SOCAL<span>·</span>PERMIT
         </Link>
 
@@ -72,7 +74,10 @@ function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <h4>SoCal Permit Service</h4>
+            <h4 className="footer__brand">
+              <img src={logoMark} alt="" width="20" height="20" />
+              SoCal Permit Service
+            </h4>
             <p style={{ margin: 0 }}>
               Building permit expediting for contractors, plans firms and
               homeowners across Southern California.
