@@ -90,10 +90,10 @@ function Footer() {
                 <Link to="/services">All services</Link>
               </li>
               <li>
-                <Link to="/services">Permit project management</Link>
+                <Link to="/services">Permit servicing</Link>
               </li>
               <li>
-                <Link to="/services">Insurance restoration</Link>
+                <Link to="/services">Consulting &amp; feasibility</Link>
               </li>
             </ul>
           </div>

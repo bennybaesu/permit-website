@@ -85,12 +85,12 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">Services</p>
-          <h2>Four ways to work with us</h2>
+          <h2>Three ways to work with us</h2>
           <p className="lead" style={{ marginBottom: 30 }}>
             Each one ends by telling you whether it&rsquo;s the right fit, so you
             don&rsquo;t have to call to find out.
           </p>
-          <div className="grid grid--4">
+          <div className="grid grid--3">
             {TIERS.map((t) => (
               <article className="card card--tier" key={t.slug}>
                 <h3>{t.name}</h3>
