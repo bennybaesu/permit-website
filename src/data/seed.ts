@@ -348,7 +348,7 @@ export const TIERS: ServiceTier[] = [
     includes: [
       "Jurisdiction routing and submittal",
       "Application preparation and filing as your authorized agent",
-      "Plan check correction responses and resubmittals",
+      "Corrections routed straight to your engineer, resubmittal once it's fixed",
       "Department follow-up through approval",
       "Live status tracking for your whole team",
     ],
