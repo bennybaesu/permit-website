@@ -20,9 +20,6 @@ export default function Home() {
               <Link to="/start" className="btn btn--primary">
                 Start a project
               </Link>
-              <Link to="/track" className="btn btn--ghost">
-                Track a project
-              </Link>
             </div>
             <p className="hint" style={{ marginTop: 18 }}>
               Or email{" "}
@@ -62,16 +59,14 @@ export default function Home() {
               <h3 style={{ color: "#d96f4c" }}>Waiting on you</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
                 If we need something from you, you&rsquo;ll know exactly what
-                it is and when we need it. No vague requests or digging
-                through old emails.
+                it is and when we need it.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#7fb2d1" }}>Waiting on the agency</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                Know where your permit is, which department is reviewing it,
-                how long it&rsquo;s been there, and when it&rsquo;s time for
-                us to follow up.
+                Which department it&rsquo;s in, and how long it&rsquo;s been
+                there.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
