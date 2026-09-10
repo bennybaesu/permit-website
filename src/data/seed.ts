@@ -348,7 +348,7 @@ export const TIERS: ServiceTier[] = [
     includes: [
       "Jurisdiction routing and submittal",
       "Application preparation and filing as your authorized agent",
-      "Corrections routed straight to your engineer, resubmitted by us once it's fixed",
+      "Corrections routed straight to your engineer, resubmitted by us",
       "Department follow-up through approval",
       "Live status tracking for your whole team",
     ],
@@ -371,8 +371,10 @@ export const TIERS: ServiceTier[] = [
   {
     slug: "consulting",
     name: "Consulting & Feasibility",
-    pitch: "Answers before anyone spends money on drawings.",
+    pitch:
+      "Free answers on both the engineering and the permitting side, before anyone spends money on drawings.",
     includes: [
+      "Engineering questions answered by our partner engineer, permitting questions answered by us",
       "Which jurisdiction actually issues this permit",
       "What the city will require for your scope",
       "Realistic timeline and fee estimate",
