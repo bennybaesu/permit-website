@@ -65,8 +65,8 @@ export default function Home() {
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#7fb2d1" }}>Waiting on the agency</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                Which department it&rsquo;s in, and how long it&rsquo;s been
-                there.
+                Every department reviewing it right now, and how long each
+                has had it.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
