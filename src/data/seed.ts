@@ -343,12 +343,12 @@ export const JURISDICTIONS: Jurisdiction[] = [
 export const TIERS: ServiceTier[] = [
   {
     slug: "permit-management",
-    name: "Permit servicing",
+    name: "Permit Servicing",
     pitch: "You already have stamped plans. We push them through the city.",
     includes: [
       "Jurisdiction routing and submittal",
       "Application preparation and filing as your authorized agent",
-      "Corrections routed straight to your engineer, resubmittal once it's fixed",
+      "Corrections routed straight to your engineer, resubmitted by us once it's fixed",
       "Department follow-up through approval",
       "Live status tracking for your whole team",
     ],
@@ -357,12 +357,12 @@ export const TIERS: ServiceTier[] = [
   },
   {
     slug: "full-service",
-    name: "Full-service: blueprints to permitting",
-    pitch: "From drawings to permit card, one team owns the whole thing.",
+    name: "Full-Service: Blueprints to Permitting",
+    pitch: "From drawings to permits, one team manages the whole process.",
     includes: [
-      "Plan preparation through our engineering partner",
-      "Everything in permit servicing",
       "Engineering and consultant coordination",
+      "Plan preparation through our engineering partner",
+      "Everything in Permit Servicing",
       "Fee calculation and payment handling",
     ],
     goodFitIf:
@@ -370,7 +370,7 @@ export const TIERS: ServiceTier[] = [
   },
   {
     slug: "consulting",
-    name: "Consulting & feasibility",
+    name: "Consulting & Feasibility",
     pitch: "Answers before anyone spends money on drawings.",
     includes: [
       "Which jurisdiction actually issues this permit",
