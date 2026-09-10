@@ -142,6 +142,11 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <p className="muted" style={{ fontSize: 15, marginTop: 26 }}>
+            Don&rsquo;t see your line of work here? If it needs a permit,
+            there&rsquo;s a good chance we can help —{" "}
+            <Link to="/contact">ask us</Link>.
+          </p>
         </div>
       </section>
 
