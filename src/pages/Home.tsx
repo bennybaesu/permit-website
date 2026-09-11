@@ -191,7 +191,7 @@ export default function Home() {
         <div className="container">
           <h2>Ready to get your permit moving?</h2>
           <p className="lead">
-            Tell us the address and scope. You can start today.
+            Tell us your permitting needs, and we&rsquo;ll get started today.
           </p>
           <div className="btn-row">
             <Link to="/start" className="btn btn--primary">
