@@ -366,17 +366,17 @@ export const TIERS: ServiceTier[] = [
       "Fee calculation and payment handling",
     ],
     goodFitIf:
-      "You need drawings or plans and permits, and want a one-stop shop for both.",
+      "You need plans and permits, and want a one-stop shop for both.",
   },
   {
     slug: "consulting",
     name: "Consulting & Feasibility",
-    pitch: "Free engineering feasibility answers before anyone spends money on drawings.",
+    pitch: "Free engineering answers before anyone spends money on drawings.",
     includes: [
       "Whether your project is structurally feasible as proposed",
       "Likely engineering approach and any red flags",
       "Realistic scope and cost expectations",
-      "Quick permitting questions — happy to weigh in, informally",
+      "Any permitting questions, answered",
     ],
     goodFitIf:
       "You want an engineer's honest read before you commit.",
