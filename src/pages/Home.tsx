@@ -149,15 +149,13 @@ export default function Home() {
               <h3>Plan &amp; Engineering Firms</h3>
               <p className="muted" style={{ fontSize: 15 }}>
                 You handle the drawings. We handle the permit — filing,
-                corrections, and follow-up with the city until it&rsquo;s
-                issued.
+                corrections, and follow-up until it&rsquo;s issued.
               </p>
             </div>
             <div>
               <h3>Homeowners Building</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                Whether you know the process or not, we&rsquo;ll walk you
-                through what the city needs.
+                We&rsquo;ll walk you through what it takes, start to finish.
               </p>
             </div>
           </div>
@@ -175,37 +173,32 @@ export default function Home() {
           <p className="eyebrow">Coverage</p>
           <h2>Where we file</h2>
           <p className="lead" style={{ marginBottom: 22 }}>
-            We keep a working file on every jurisdiction we submit to — which
-            portal, which forms, which reviewer quirks, what it actually takes.
+            Every county runs it differently. We know the differences.
           </p>
           <ul className="tag-list">
             {COUNTIES.map((c) => (
               <li key={c}>{c}</li>
             ))}
           </ul>
-          <p className="muted" style={{ fontSize: 15, marginBottom: 18 }}>
+          <p className="muted" style={{ fontSize: 15 }}>
             Southern California is home base. Outside it? Ask — we&rsquo;ll
             tell you straight whether it&rsquo;s a fit.
           </p>
-          <Link to="/jurisdictions" className="btn btn--ghost">
-            See all jurisdictions
-          </Link>
         </div>
       </section>
 
       <section className="section section--blue">
         <div className="container">
-          <h2>Ready to hand one off?</h2>
+          <h2>Ready to get your permit moving?</h2>
           <p className="lead">
-            Tell us the address and scope. We&rsquo;ll confirm the jurisdiction
-            and what it takes, usually same day.
+            Tell us the address and scope. You can start today.
           </p>
           <div className="btn-row">
             <Link to="/start" className="btn btn--primary">
               Start a project
             </Link>
             <Link to="/contact" className="btn btn--onDark">
-              Ask a question first
+              Ask a question
             </Link>
           </div>
         </div>
