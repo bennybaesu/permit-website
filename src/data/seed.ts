@@ -349,11 +349,11 @@ export const TIERS: ServiceTier[] = [
       "Jurisdiction routing and submittal",
       "Application preparation and filing as your authorized agent",
       "Corrections routed straight to your engineer, resubmitted by us",
-      "Department follow-up through approval",
+      "Department follow-up all the way through approval",
       "Live status tracking for your whole team",
     ],
     goodFitIf:
-      "You have drawings ready and want someone who already knows what this city asks for.",
+      "You have drawings ready and need to get them approved.",
   },
   {
     slug: "full-service",
@@ -366,21 +366,19 @@ export const TIERS: ServiceTier[] = [
       "Fee calculation and payment handling",
     ],
     goodFitIf:
-      "You need drawings and permits, and you'd rather call one number than four.",
+      "You need drawings or plans and permits, and want a one-stop shop for both.",
   },
   {
     slug: "consulting",
     name: "Consulting & Feasibility",
-    pitch:
-      "Free answers on both the engineering and the permitting side, before anyone spends money on drawings.",
+    pitch: "Free engineering feasibility answers before anyone spends money on drawings.",
     includes: [
-      "Engineering questions answered by our partner engineer, permitting questions answered by us",
-      "Which jurisdiction actually issues this permit",
-      "What the city will require for your scope",
-      "Realistic timeline and fee estimate",
-      "Whether the project is viable as proposed",
+      "Whether your project is structurally feasible as proposed",
+      "Likely engineering approach and any red flags",
+      "Realistic scope and cost expectations",
+      "Quick permitting questions — happy to weigh in, informally",
     ],
     goodFitIf:
-      "You need to know what you're walking into before you commit.",
+      "You want an engineer's honest read before you commit.",
   },
 ];
