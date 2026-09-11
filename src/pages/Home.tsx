@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { JURISDICTIONS, TIERS } from "../data/seed";
+import { TIERS } from "../data/seed";
+
+const COUNTIES = [
+  "Orange County",
+  "Los Angeles County",
+  "San Bernardino County",
+  "Riverside County",
+  "San Diego County",
+];
 
 /** Highlights a reference to the Permit Servicing tier in its title color. */
 function renderTierInclude(text: string) {
@@ -170,14 +178,14 @@ export default function Home() {
             portal, which forms, which reviewer quirks, what it actually takes.
           </p>
           <ul className="tag-list">
-            {JURISDICTIONS.map((j) => (
-              <li key={j.slug}>
-                <Link to={`/jurisdictions/${j.slug}`} style={{ textDecoration: "none" }}>
-                  {j.name}
-                </Link>
-              </li>
+            {COUNTIES.map((c) => (
+              <li key={c}>{c}</li>
             ))}
           </ul>
+          <p className="muted" style={{ fontSize: 15, marginBottom: 18 }}>
+            Southern California is home base. Outside it? Ask — we&rsquo;ll
+            tell you straight whether it&rsquo;s a fit.
+          </p>
           <Link to="/jurisdictions" className="btn btn--ghost">
             See all jurisdictions
           </Link>
