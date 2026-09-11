@@ -131,21 +131,21 @@ export default function Home() {
           <p className="eyebrow">Who we work with</p>
           <div className="grid grid--3">
             <div>
-              <h3>Restoration &amp; repair contractors</h3>
+              <h3>Contractors</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                Fire, water and structural repair work where the claim clock is
-                already running.
+                Restoration, repair, remodels or ground-up builds — whatever
+                the scope.
               </p>
             </div>
             <div>
-              <h3>Plans &amp; engineering firms</h3>
+              <h3>Plan &amp; engineering firms</h3>
               <p className="muted" style={{ fontSize: 15 }}>
                 You draw it, we file it. White-label permitting so you never
                 staff a permit desk.
               </p>
             </div>
             <div>
-              <h3>Homeowners rebuilding</h3>
+              <h3>Homeowners building</h3>
               <p className="muted" style={{ fontSize: 15 }}>
                 One person who speaks the city&rsquo;s language and explains
                 yours back to you.
