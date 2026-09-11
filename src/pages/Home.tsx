@@ -141,22 +141,23 @@ export default function Home() {
             <div>
               <h3>Contractors</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                Restoration, repair, remodels or ground-up builds — whatever
+                Restoration, repair, remodels, or ground-up builds — whatever
                 the scope.
               </p>
             </div>
             <div>
-              <h3>Plan &amp; engineering firms</h3>
+              <h3>Plan &amp; Engineering Firms</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                You draw it, we file it. White-label permitting so you never
-                staff a permit desk.
+                You handle the drawings. We handle the permit — filing,
+                corrections, and follow-up with the city until it&rsquo;s
+                issued.
               </p>
             </div>
             <div>
-              <h3>Homeowners building</h3>
+              <h3>Homeowners Building</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                One person who speaks the city&rsquo;s language and explains
-                yours back to you.
+                Whether you know the process or not, we&rsquo;ll walk you
+                through what the city needs.
               </p>
             </div>
           </div>
