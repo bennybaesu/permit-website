@@ -343,55 +343,42 @@ export const JURISDICTIONS: Jurisdiction[] = [
 export const TIERS: ServiceTier[] = [
   {
     slug: "permit-management",
-    name: "Permit project management",
+    name: "Permit Servicing",
     pitch: "You already have stamped plans. We push them through the city.",
     includes: [
       "Jurisdiction routing and submittal",
       "Application preparation and filing as your authorized agent",
-      "Plan check correction responses and resubmittals",
-      "Department follow-up through approval",
+      "Corrections routed straight to your engineer, resubmitted by us",
+      "Department follow-up all the way through approval",
       "Live status tracking for your whole team",
     ],
     goodFitIf:
-      "You have drawings ready and want someone who already knows what this city asks for.",
+      "You have drawings ready and need to get them approved.",
   },
   {
     slug: "full-service",
-    name: "Full-service permitting",
-    pitch: "From drawings to permit card, one team owns the whole thing.",
+    name: "Full-Service: Blueprints to Permitting",
+    pitch: "From drawings to permits, one team manages the whole process.",
     includes: [
-      "Plan preparation through our engineering partner",
-      "Everything in permit project management",
       "Engineering and consultant coordination",
+      "Plan preparation through our engineering partner",
+      "Everything in Permit Servicing",
       "Fee calculation and payment handling",
     ],
     goodFitIf:
-      "You need drawings and permits, and you'd rather call one number than four.",
-  },
-  {
-    slug: "restoration",
-    name: "Insurance restoration permitting",
-    pitch: "Repair and rebuild work, priced and paced for insurance timelines.",
-    includes: [
-      "Fire, water and structural repair permits",
-      "Like-for-like and streamlined rebuild pathways",
-      "Volume pricing for restoration contractors",
-      "Documentation formatted for carriers and adjusters",
-    ],
-    goodFitIf:
-      "You run restoration jobs and need permits that keep pace with the claim.",
+      "You need plans and permits, and want a one-stop shop for both.",
   },
   {
     slug: "consulting",
-    name: "Feasibility & consulting",
-    pitch: "Answers before anyone spends money on drawings.",
+    name: "Consulting & Feasibility",
+    pitch: "Free engineering answers before anyone spends money on drawings.",
     includes: [
-      "Which jurisdiction actually issues this permit",
-      "What the city will require for your scope",
-      "Realistic timeline and fee estimate",
-      "Whether the project is viable as proposed",
+      "Whether your project is structurally feasible as proposed",
+      "Likely engineering approach and any red flags",
+      "Realistic scope and cost expectations",
+      "Any permitting questions, answered",
     ],
     goodFitIf:
-      "You need to know what you're walking into before you commit.",
+      "You want an engineer's honest read before you commit.",
   },
 ];

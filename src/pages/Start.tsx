@@ -24,8 +24,8 @@ export default function Start() {
           </div>
           <h1>We&rsquo;ll confirm the jurisdiction and get back to you</h1>
           <p className="lead">
-            Usually same day. You&rsquo;ll get a project number by email, and you
-            can check status any time without an account.
+            You&rsquo;ll get a project number by email, and you can check
+            status any time without an account.
           </p>
           <div className="callout">
             <strong>Developer note:</strong> this form doesn&rsquo;t submit

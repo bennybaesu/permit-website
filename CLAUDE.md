@@ -83,21 +83,39 @@ src/
 Palette is defined once as CSS custom properties at the top of `styles.css`.
 Use the variables, never raw hex values in components.
 
-| Token | Hex | Role |
-| --- | --- | --- |
-| `--blueprint` | `#255C78` | Headings, nav, links, "waiting on agency" |
-| `--charcoal` | `#20282B` | Body text, dark sections, footer |
-| `--paper` | `#F4F0E8` | Page background |
-| `--concrete` | `#D8D8D2` | Borders, rules, card edges |
-| `--terracotta` | `#D96F4C` | CTAs, eyebrows, "waiting on you" |
-| `--sage` | `#789783` | Completed stages, issued stamp |
-| `--studio` | `#FCFCFA` | Cards, nav bar, clean space |
+| Token | Hex | Brand name | Role |
+| --- | --- | --- | --- |
+| `--blueprint` | `#255C78` | Blueprint Blue | Headings, nav, links, "waiting on agency" |
+| `--charcoal` | `#20282B` | Architectural Charcoal | Body text, dark sections, footer |
+| `--paper` | `#F4F0E8` | — | Page background |
+| `--concrete` | `#D8D8D2` | — | Borders, rules, card edges |
+| `--terracotta` | `#D96F4C` | California Terracotta | CTAs, eyebrows, "waiting on you" |
+| `--sage` | `#789783` | — | Completed stages, issued stamp |
+| `--studio` | `#FCFCFA` | — | Cards, nav bar, clean space |
+
+This is the same palette used in the logo (see below) — the two are kept in
+sync intentionally.
 
 Type: Archivo (display/headings), IBM Plex Sans (body), IBM Plex Mono (data,
 labels, eyebrows, project numbers). Loaded from Google Fonts in `index.html`.
 
 Quality floor, non-negotiable: responsive to mobile, visible keyboard focus,
 `prefers-reduced-motion` respected. Contractors read this on phones in trucks.
+
+### Logo
+
+- `src/assets/logo-mark.svg` — icon only (running figure, motion lines, arc,
+  ground line). Used in the nav brand and footer via `<img>`. Also the source
+  for `public/favicon.svg`.
+- `src/assets/logo-full.svg` — full horizontal lockup (mark + "SoCal Permit
+  Service" wordmark). Not currently wired into a page; saved as the
+  reference asset for print/social use. Its text uses the site's font stack
+  but, as a standalone SVG file, falls back to system fonts when opened
+  outside the app (Google Fonts aren't available in that context).
+- Both are hand-drawn line art built from the brand's original logo concept
+  (palm tree + drafting/blueprint marks + running figure), not a pixel copy
+  of a source file — recreate rather than edit in place if the design needs
+  to change.
 
 ## Voice
 

@@ -23,7 +23,6 @@ export default function Jurisdictions() {
                 <tr>
                   <th>Jurisdiction</th>
                   <th>Permits issued by</th>
-                  <th>Typical first review</th>
                 </tr>
               </thead>
               <tbody>
@@ -33,7 +32,6 @@ export default function Jurisdictions() {
                       <Link to={`/jurisdictions/${j.slug}`}>{j.name}</Link>
                     </td>
                     <td>{j.issuedBy}</td>
-                    <td>{j.typicalTurnaround}</td>
                   </tr>
                 ))}
               </tbody>

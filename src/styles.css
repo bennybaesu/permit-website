@@ -280,6 +280,9 @@ p {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--display);
   font-weight: 800;
   font-size: 19px;
@@ -291,6 +294,11 @@ p {
 
 .brand span {
   color: var(--terracotta);
+}
+
+.brand__mark {
+  display: block;
+  flex-shrink: 0;
 }
 
 .nav__links {
@@ -383,6 +391,19 @@ p {
   text-transform: uppercase;
   color: var(--terracotta);
   margin-bottom: 10px;
+}
+
+.footer .footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--studio);
+  margin-bottom: 12px;
 }
 
 .footer ul {

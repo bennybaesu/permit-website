@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
 import { TIERS } from "../data/seed";
 
+/** Highlights a reference to the Permit Servicing tier in its title color. */
+function renderTierInclude(text: string) {
+  const marker = "Permit Servicing";
+  const idx = text.indexOf(marker);
+  if (idx === -1) return text;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <span style={{ color: "var(--blueprint)" }}>{marker}</span>
+      {text.slice(idx + marker.length)}
+    </>
+  );
+}
+
 export default function Services() {
   return (
     <section className="section">
@@ -32,7 +46,7 @@ export default function Services() {
               </p>
               <ul>
                 {t.includes.map((i) => (
-                  <li key={i}>{i}</li>
+                  <li key={i}>{renderTierInclude(i)}</li>
                 ))}
               </ul>
               <div className="fit">

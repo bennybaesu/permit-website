@@ -49,10 +49,6 @@ export default function JurisdictionDetail() {
             <dt>Fire review</dt>
             <dd>{j.fireAuthority} — separate review, separate clock</dd>
           </div>
-          <div className="spec__row">
-            <dt>Typical first review</dt>
-            <dd>{j.typicalTurnaround}</dd>
-          </div>
         </dl>
 
         {j.notes.length > 0 && (

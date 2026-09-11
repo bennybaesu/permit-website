@@ -1,5 +1,27 @@
 import { Link } from "react-router-dom";
-import { JURISDICTIONS, TIERS } from "../data/seed";
+import { TIERS } from "../data/seed";
+
+const COUNTIES = [
+  "Orange County",
+  "Los Angeles County",
+  "San Bernardino County",
+  "Riverside County",
+  "San Diego County",
+];
+
+/** Highlights a reference to the Permit Servicing tier in its title color. */
+function renderTierInclude(text: string) {
+  const marker = "Permit Servicing";
+  const idx = text.indexOf(marker);
+  if (idx === -1) return text;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <span style={{ color: "var(--blueprint)" }}>{marker}</span>
+      {text.slice(idx + marker.length)}
+    </>
+  );
+}
 
 export default function Home() {
   return (
@@ -19,9 +41,6 @@ export default function Home() {
             <div className="btn-row">
               <Link to="/start" className="btn btn--primary">
                 Start a project
-              </Link>
-              <Link to="/track" className="btn btn--ghost">
-                Track a project
               </Link>
             </div>
             <p className="hint" style={{ marginTop: 18 }}>
@@ -62,16 +81,14 @@ export default function Home() {
               <h3 style={{ color: "#d96f4c" }}>Waiting on you</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
                 If we need something from you, you&rsquo;ll know exactly what
-                it is and when we need it. No vague requests or digging
-                through old emails.
+                it is and when we need it.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
               <h3 style={{ color: "#7fb2d1" }}>Waiting on the agency</h3>
               <p style={{ color: "rgba(252,252,250,.75)", margin: 0 }}>
-                Know where your permit is, which department is reviewing it,
-                how long it&rsquo;s been there, and when it&rsquo;s time for
-                us to follow up.
+                You&rsquo;ll know every department reviewing it right now,
+                and how long each has had it.
               </p>
             </div>
             <div className="card card--flat" style={{ borderColor: "#3a4548" }}>
@@ -90,19 +107,15 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <p className="eyebrow">Services</p>
-          <h2>Four ways to work with us</h2>
-          <p className="lead" style={{ marginBottom: 30 }}>
-            Each one ends by telling you whether it&rsquo;s the right fit, so you
-            don&rsquo;t have to call to find out.
-          </p>
-          <div className="grid grid--4">
+          <h2>Three ways to work with us</h2>
+          <div className="grid grid--3">
             {TIERS.map((t) => (
               <article className="card card--tier" key={t.slug}>
                 <h3>{t.name}</h3>
                 <p style={{ fontSize: 14.5 }}>{t.pitch}</p>
                 <ul>
                   {t.includes.slice(0, 4).map((i) => (
-                    <li key={i}>{i}</li>
+                    <li key={i}>{renderTierInclude(i)}</li>
                   ))}
                 </ul>
                 <div className="fit">
@@ -126,27 +139,31 @@ export default function Home() {
           <p className="eyebrow">Who we work with</p>
           <div className="grid grid--3">
             <div>
-              <h3>Restoration &amp; repair contractors</h3>
+              <h3>Contractors</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                Fire, water and structural repair work where the claim clock is
-                already running.
+                Restoration, repair, remodels, or ground-up builds — whatever
+                the scope.
               </p>
             </div>
             <div>
-              <h3>Plans &amp; engineering firms</h3>
+              <h3>Plan &amp; Engineering Firms</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                You draw it, we file it. White-label permitting so you never
-                staff a permit desk.
+                You handle the drawings. We handle the permit — filing,
+                corrections, and follow-up until it&rsquo;s issued.
               </p>
             </div>
             <div>
-              <h3>Homeowners rebuilding</h3>
+              <h3>Homeowners Building</h3>
               <p className="muted" style={{ fontSize: 15 }}>
-                One person who speaks the city&rsquo;s language and explains
-                yours back to you.
+                We&rsquo;ll walk you through what it takes, start to finish.
               </p>
             </div>
           </div>
+          <p className="muted" style={{ fontSize: 15, marginTop: 26 }}>
+            Don&rsquo;t see your line of work here? If it needs a permit,
+            there&rsquo;s a good chance we can help —{" "}
+            <Link to="/contact">ask us</Link>.
+          </p>
         </div>
       </section>
 
@@ -156,37 +173,32 @@ export default function Home() {
           <p className="eyebrow">Coverage</p>
           <h2>Where we file</h2>
           <p className="lead" style={{ marginBottom: 22 }}>
-            We keep a working file on every jurisdiction we submit to — which
-            portal, which forms, which reviewer quirks, what it actually takes.
+            Every county runs it differently. We know the differences.
           </p>
           <ul className="tag-list">
-            {JURISDICTIONS.map((j) => (
-              <li key={j.slug}>
-                <Link to={`/jurisdictions/${j.slug}`} style={{ textDecoration: "none" }}>
-                  {j.name}
-                </Link>
-              </li>
+            {COUNTIES.map((c) => (
+              <li key={c}>{c}</li>
             ))}
           </ul>
-          <Link to="/jurisdictions" className="btn btn--ghost">
-            See all jurisdictions
-          </Link>
+          <p className="muted" style={{ fontSize: 15 }}>
+            Southern California is home base. Outside it? Ask — we&rsquo;ll
+            tell you straight whether it&rsquo;s a fit.
+          </p>
         </div>
       </section>
 
       <section className="section section--blue">
         <div className="container">
-          <h2>Ready to hand one off?</h2>
+          <h2>Ready to get your permit moving?</h2>
           <p className="lead">
-            Tell us the address and scope. We&rsquo;ll confirm the jurisdiction
-            and what it takes, usually same day.
+            Tell us your permitting needs, and we&rsquo;ll get started today.
           </p>
           <div className="btn-row">
             <Link to="/start" className="btn btn--primary">
               Start a project
             </Link>
             <Link to="/contact" className="btn btn--onDark">
-              Ask a question first
+              Ask a question
             </Link>
           </div>
         </div>
