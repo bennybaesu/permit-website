@@ -7,8 +7,7 @@ export default function Contact() {
         <p className="eyebrow">Contact</p>
         <h1>Talk to a person</h1>
         <p className="lead" style={{ marginBottom: 28 }}>
-          Email for anything, urgent or not. We answer during business hours
-          and reply the same day.
+          Email for anything, urgent or not. We&rsquo;ll get back to you.
         </p>
 
         <dl className="spec">
@@ -19,10 +18,6 @@ export default function Contact() {
                 socalpermitrunner@gmail.com
               </a>
             </dd>
-          </div>
-          <div className="spec__row">
-            <dt>Hours</dt>
-            <dd>Monday&ndash;Friday, 7:00 AM &ndash; 5:00 PM Pacific</dd>
           </div>
           <div className="spec__row">
             <dt>Service area</dt>
